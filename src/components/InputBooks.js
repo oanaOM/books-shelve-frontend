@@ -13,7 +13,10 @@ const InputBooks = () => {
             const body = { title, author };
             const response = await fetch("http://206.189.23.196:5005/books", {
               method: "POST",
-              headers: { "Content-Type": "application/json" },
+              headers: {
+                "Content-Type": "application/json",
+                "Content-Security-Policy": "upgrade-insecure-requests",
+              },
               body: JSON.stringify(body),
             });
 console.log(">>>body: ", body);

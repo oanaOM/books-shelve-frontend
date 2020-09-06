@@ -14,7 +14,10 @@ const EditBook = ({ book }) => {
         `http://206.189.23.196:5005/books/${book.book_id}`,
         {
           method: "PUT",
-          headers: { "Content-Type": "application/json" },
+          headers: {
+            "Content-Type": "application/json",
+            "Content-Security-Policy": "upgrade-insecure-requests",
+          },
           body: JSON.stringify(body),
         }
       );

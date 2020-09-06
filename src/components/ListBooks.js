@@ -19,7 +19,11 @@ const ListBooks = () => {
 
     const getBooks = async () => { 
         try {
-            const response = await fetch("http://206.189.23.196:5005/books");
+          const response = await fetch("http://206.189.23.196:5005/books", {
+            headers: {
+              "Content-Security-Policy": "upgrade-insecure-requests"
+            },
+          });
 
             const jsonData = await response.json();
 
