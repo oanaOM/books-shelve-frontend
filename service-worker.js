@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/books-shelve-frontend/precache-manifest.1fc2980927d87cb74a6f28f7bb50c814.js"
+  "/books-shelve-frontend/precache-manifest.b82a92779cf138647451f4a4eb1e0087.js"
 );
 
 self.addEventListener('message', (event) => {
